@@ -1,11 +1,14 @@
 package questions
 
-import "leetcode-go"
+import (
+	"leetcode-go"
+)
 
-func minimumTotal(triangle [][]int) int {
+func MinimumTotal(triangle [][]int) int {
 	if len(triangle) == 0 {
 		return 0
 	}
+
 	rows := len(triangle)
 	dp := make([][]int, rows)
 	for i := 0; i < rows; i++ {
